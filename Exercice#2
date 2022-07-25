@@ -1,0 +1,36 @@
+#Exercise 2 Veena Aruldhas
+#Partner name Betty K
+#Creates a function that takes a string as a input,
+#splits the string into words and returns a dictionary representing the 
+#frequency count of words in input string
+#Signed off by Mr. Cohen
+
+import sys
+
+"""define a function inside the code 
+that will take an input of a string and define a list that
+split the string input, and make a list and then make frequency as 
+dictionaryE
+
+"""
+#create a function
+def wordCount(StudentInfo):
+
+    # define a list that split the string input StudentInfo
+    words =  studentInfo.split()
+
+    # Make an empty list and define it as frequency
+    frequency=  {}
+
+    # define a function that will print frequency as dictionary
+    for  word in words :
+        if word not in frequency:
+            frequency[word]= 1
+        else:
+            frequency[word] += 1
+    return frequency
+
+#ask for the user to input a sentence
+studentInfo = input("Please input a sentence: ")
+#print the function with the variable studentInfo
+print(wordCount(studentInfo))
